@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+.search-bar {
+    width: 60%;
+}
+
+#meal-container .card {
+    cursor: pointer;
+}
+
+#meal-details .card .card-text {
+    font-size: 17px;
+}
+
+@media screen and (max-width: 580px) {
+    .search-bar {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 581px) and (max-width: 990px) {
+    .search-bar {
+        width: 90%;
+    }
+}

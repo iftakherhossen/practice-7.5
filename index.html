@@ -1,0 +1,63 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Meal DB</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark py-3 sticky-top">
+        <div class="container d-flex justify-content-between px-4 px-md-0">
+            <a class="navbar-brand d-flex justify-content-center align-items-center gap-4 text-white" href="/index.html">
+                <h1 class="fs-3 my-auto">Dish Guide</h1>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container h-100">
+        <!-- meal search engine -->
+        <section>
+            <div class="px-3 pt-5 pb-4">
+                <h1 class="text-success text-center fw-bolder mb-4">Learn About Your Favorite Dish</h1>
+                <div class="input-group my-3 mx-auto search-bar">
+                    <input id="search-field" type="search" class="form-control" placeholder="Search your favorite dish here" aria-label="Search your favorite dish here" aria-describedby="button-addon2">
+                    <button onclick="handleSearchFood()" class="btn btn-outline-success fs-5" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <!-- error message -->
+                <div>
+                    <p id="error-message" class="text-danger text-center fs-6"></p>
+                    <p id="result-message" class="text-black text-center fs-5"></p>
+                </div>   
+                </div>       
+        </section>  
+        
+        <!-- meal detail card -->
+        <section>
+            <div id="meal-details" class="row row-cols-1 p-3 p-lg-4 mb-4"></div> 
+        </section>
+
+        <!-- meals card container -->
+        <section class="mb-5">
+            <div id="meal-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark">
+        <div class="text-center p-3 text-white">
+            © 2024 Copyright: <a href="/" class="text-decoration-none text-white">Dish Guide</a>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
+</body>
+</html>
